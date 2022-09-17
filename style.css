@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #363062;
+}
+
+.card {
+    background-color: #E9D5DA;
+}
+
+#leyenda {
+    color:  white;
+}
+
+#btnConfirmar {
+    position: sticky;
+    bottom: 15px;
+}
