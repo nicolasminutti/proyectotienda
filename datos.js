@@ -37,7 +37,7 @@ function buscarDatos() {
     } else {
         switch (busqueda) {
             case 'Título Película' :
-                axios.get('https://imdb-api.com/es/API/SearchMovie/k_w2b5m5wd/' + valorBusqueda + '')
+                axios.get('https://imdb-api.com/es/API/SearchMovie/XXXXXXX/' + valorBusqueda + '')
                     .then(function(response) {
                         let datos = response.data.results
                         muestraPeliculaTitulo(datos)
@@ -48,7 +48,7 @@ function buscarDatos() {
                     })
                 break
             case 'Actor' :
-                axios.get('https://imdb-api.com/es/API/SearchName/k_w2b5m5wd/' + valorBusqueda + '')
+                axios.get('https://imdb-api.com/es/API/SearchName/XXXXXXX/' + valorBusqueda + '')
                     .then(function(response) {
                         let datos = response.data.results
                         muestraActor(datos)
@@ -59,7 +59,7 @@ function buscarDatos() {
                     })
                 break
             case 'Nombre Canción' :
-                axios.get('http://ws.audioscrobbler.com/2.0/?method=track.search&track=' + valorBusqueda + '&api_key=63b13e5dbe521b84674e946277d10686&format=json')
+                axios.get('http://ws.audioscrobbler.com/2.0/?method=track.search&track=' + valorBusqueda + '&api_key=XXXXXXX&format=json')
                     .then(function(response) {
                         let datos = response.data.results.trackmatches.track
                         muestraCancion(datos)
@@ -70,7 +70,7 @@ function buscarDatos() {
                     })
                 break
             case 'Nombre Albúm' :
-                axios.get('http://ws.audioscrobbler.com/2.0/?method=album.search&album=' + valorBusqueda + '&api_key=63b13e5dbe521b84674e946277d10686&format=json')
+                axios.get('http://ws.audioscrobbler.com/2.0/?method=album.search&album=' + valorBusqueda + '&api_key=XXXXXXX&format=json')
                     .then(function(response) {
                         let datos = response.data.results.albummatches.album
                         muestraAlbum(datos)
@@ -81,7 +81,7 @@ function buscarDatos() {
                     })
                 break
             case 'Artista' :
-                axios.get('http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=' + valorBusqueda + '&api_key=63b13e5dbe521b84674e946277d10686&format=json')
+                axios.get('http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=' + valorBusqueda + '&api_key=XXXXXXX&format=json')
                     .then(function(response) {
                         let datos = response.data.results.artistmatches.artist
                         muestraArtista(datos)
